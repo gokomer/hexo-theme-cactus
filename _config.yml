@@ -155,7 +155,7 @@ baidu_analytics:
 # Fill in your Matomo Analytics website ID, analytics subdomain and domain address to enable Matomo Analytics
 matomo_analytics:
   enabled: false
-  id: 1
+  site_id: 1
   subdomain: subdomain
   domain: domain.com
 
