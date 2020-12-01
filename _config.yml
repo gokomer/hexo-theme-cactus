@@ -152,6 +152,13 @@ baidu_analytics:
   enabled: false
   id: 2e6da3c375c8a87f5b664cea6d4cb29c
 
+# Fill in your Matomo Analytics website ID, analytics subdomain and domain address to enable Matomo Analytics
+matomo_analytics:
+  enabled: false
+  id: 1
+  subdomain: subdomain
+  domain: domain.com
+
 # Fill in your Umami Analytics tracking ID to enable Umami Analytics.
 umami_analytics:
   enabled: false
