@@ -87,7 +87,7 @@
         </script>
 <% } %>
 <!-- Matomo -->
-<% if (theme.matomo_analytics.enabled && theme.matomo_analytics.site_id && theme.matomo_analytics.site_url && theme.matomo_analytics.subdomain){ %>
+<% if (theme.matomo_analytics.enabled && theme.matomo_analytics.site_id && theme.matomo_analytics.domain && theme.matomo_analytics.subdomain){ %>
   <script type="text/javascript">
     var _paq = window._paq = window._paq || [];
     /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
@@ -99,7 +99,7 @@
     (function() {
       var u="https://<%= theme.matomo_analytics.subdomain %>.matomo.cloud/";
       _paq.push(['setTrackerUrl', u+'matomo.php']);
-      _paq.push(['setSiteId', '<%= theme.matomo_analytics.site_id %>']);
+      _paq.push(['setSiteId', '<%= theme.matomo_analytics.id %>']);
       var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
       g.type='text/javascript'; g.async=true; g.src='//cdn.matomo.cloud/<%= theme.matomo_analytics.subdomain %>.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
     })();
